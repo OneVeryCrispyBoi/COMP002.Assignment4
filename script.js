@@ -24,3 +24,15 @@ function calculateCircumference(radius){
 // console.log(searchString(“s”, “mississippi”)); // will output 4
 // console.log(searchString(“q”, “mississippi”)); // will output 0
 
+function searchString(characterInput, stringInput) {
+    let counter = 0;
+    for(let i = 0; i < stringInput.length; i++){
+        if (stringInput[i] == characterInput) {
+            counter++;
+        }
+    }
+
+    return counter;
+}
+
+console.log(searchString("s", "mississippi"));
